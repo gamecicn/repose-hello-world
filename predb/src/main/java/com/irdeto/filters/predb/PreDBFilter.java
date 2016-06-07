@@ -17,7 +17,8 @@
  * limitations under the License.
  * =_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_=_
  */
-package org.openrepose.filters.custom.helloworldjava;
+
+package com.irdeto.filters.predb;
 
 //import org.openrepose.commons.utils.servlet.http.HttpServletRequestWrapper;
 //import org.openrepose.commons.utils.servlet.http.HttpServletResponseWrapper;
@@ -46,8 +47,8 @@ import org.apache.commons.httpclient.params.HttpMethodParams;
 
 // @Named can be omitted if class doesn't have a constructor with arguments
 @Named
-public class HelloWorldJavaFilter implements Filter, UpdateListener<HelloWorldJavaConfig> {
-    private static final Logger LOG = LoggerFactory.getLogger(HelloWorldJavaFilter.class);
+public class PreDBFilter implements Filter, UpdateListener<HelloWorldJavaConfig> {
+    private static final Logger LOG = LoggerFactory.getLogger(PreDBFilter.class);
     private static final String DEFAULT_CONFIG = "hello-world-java.cfg.xml";
     private final ConfigurationService configurationService;
     private String configurationFile = DEFAULT_CONFIG;
@@ -55,7 +56,7 @@ public class HelloWorldJavaFilter implements Filter, UpdateListener<HelloWorldJa
     private boolean initialized = false;
 
     @Inject
-    public HelloWorldJavaFilter(ConfigurationService configurationService) {
+    public PreDBFilter(ConfigurationService configurationService) {
         this.configurationService = configurationService;
     }
 

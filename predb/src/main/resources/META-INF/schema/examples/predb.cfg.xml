@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<hello-world-java xmlns='http://docs.example.com/repose/hello-world-java/v1.0'>
+<predb xmlns='http://docs.example.com/repose/hello-world-java/v1.0'>
     <messages>
         <!-- This is the message you want to output to the log. -->
         <message value="Pre DB" />
     </messages>
-</hello-world-java>
+</predb>

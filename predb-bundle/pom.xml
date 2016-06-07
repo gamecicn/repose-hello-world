@@ -2,13 +2,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.openrepose.filters.custom</groupId>
+        <groupId>irdeto.com</groupId>
         <artifactId>repose-hello-world</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <name>Repose Hello World - EAR Bundle</name>
-    <artifactId>custom-bundle</artifactId>
+    <name>Repose PreDB - EAR Bundle</name>
+    <artifactId>predb-bundle</artifactId>
     <packaging>ear</packaging>
 
     <description>
@@ -17,10 +17,10 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.openrepose.filters.custom</groupId>
-            <artifactId>hello-world-java</artifactId>
+            <groupId>com.irdeto</groupId>
+            <artifactId>predb</artifactId>
             <version>${project.version}</version>
-        </dependency>
+		</dependency>
     </dependencies>
 
     <build>
