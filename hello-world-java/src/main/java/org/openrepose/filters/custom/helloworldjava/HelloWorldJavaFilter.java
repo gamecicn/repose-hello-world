@@ -19,9 +19,9 @@
  */
 package org.openrepose.filters.custom.helloworldjava;
 
-import org.openrepose.commons.utils.servlet.http.HttpServletRequestWrapper;
-import org.openrepose.commons.utils.servlet.http.HttpServletResponseWrapper;
-import org.openrepose.commons.utils.servlet.http.ResponseMode;
+//import org.openrepose.commons.utils.servlet.http.HttpServletRequestWrapper;
+//import org.openrepose.commons.utils.servlet.http.HttpServletResponseWrapper;
+//import org.openrepose.commons.utils.servlet.http.ResponseMode;
 import org.openrepose.filters.custom.helloworldjava.config.HelloWorldJavaConfig;
 import org.openrepose.filters.custom.helloworldjava.config.Message;
 import org.openrepose.filters.custom.helloworldjava.config.MessageList;
@@ -38,6 +38,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.net.URL;
+
+import org.json.*;
+import org.apache.commons.httpclient.*;
+import org.apache.commons.httpclient.methods.*;
+import org.apache.commons.httpclient.params.HttpMethodParams;
 
 // @Named can be omitted if class doesn't have a constructor with arguments
 @Named
@@ -81,7 +86,7 @@ public class HelloWorldJavaFilter implements Filter, UpdateListener<HelloWorldJa
             LOG.error("Hello World Java filter has not yet initialized...");
             ((HttpServletResponse) servletResponse).sendError(500);
         } else {
-            HttpServletRequestWrapper wrappedHttpRequest = new HttpServletRequestWrapper((HttpServletRequest) servletRequest);
+            /*HttpServletRequestWrapper wrappedHttpRequest = new HttpServletRequestWrapper((HttpServletRequest) servletRequest);
             HttpServletResponseWrapper wrappedHttpResponse = new HttpServletResponseWrapper(
                     (HttpServletResponse) servletResponse, ResponseMode.PASSTHROUGH, ResponseMode.PASSTHROUGH);
 
@@ -100,7 +105,7 @@ public class HelloWorldJavaFilter implements Filter, UpdateListener<HelloWorldJa
             LOG.trace("Hello World Java filter processing response...");
             for (Message message : messageList.getMessage()) {
                 LOG.info("Response message: " + message.getValue());
-            }
+            }*/
         }
         LOG.trace("Hello World filter returning response...");
     }

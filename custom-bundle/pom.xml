@@ -21,21 +21,6 @@
             <artifactId>hello-world-java</artifactId>
             <version>${project.version}</version>
         </dependency>
-        <dependency>
-            <groupId>org.openrepose.filters.custom</groupId>
-            <artifactId>hello-world-scala</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.openrepose.filters.custom</groupId>
-            <artifactId>hello-world-groovy</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.openrepose.filters.custom</groupId>
-            <artifactId>hello-world-kotlin</artifactId>
-            <version>${project.version}</version>
-        </dependency>
     </dependencies>
 
     <build>

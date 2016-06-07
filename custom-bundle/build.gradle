@@ -1,8 +1,5 @@
 apply plugin: 'ear'
 
 dependencies {
-    earlib project(":hello-world-groovy")
     earlib project(":hello-world-java")
-    earlib project(":hello-world-kotlin")
-    earlib project(":hello-world-scala")
 }
